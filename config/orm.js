@@ -70,22 +70,6 @@ updateOne:function(table, objColVals, condition, cb) {
       cb(result);
     });
   }
-//   ,
-//    delete: function(table, condition, cb) {
-//     //suspetible to sql injection attack -- add ?
-//     var queryString = "DELETE FROM " + table;
-//     queryString += " WHERE ";
-//     queryString += condition;
-
-//     console.log(queryString);
-//     connection.query(queryString, function(err, result) {
-//       if (err) {
-//         throw err;
-//       }
-
-//       cb(result);
-//     });
-//   }
 };
 
 module.exports = orm;
